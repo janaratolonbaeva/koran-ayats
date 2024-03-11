@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
   const filesNumber = 20;
-  const container = document.querySelector('.container');
+  const content = document.querySelector('.content');
   const buttons = document.querySelector('.buttons');
 
   function createIframe() {
     for (i = 0; i < filesNumber; i++) {
-      const url = `./files/lesson-${i + 1}.pdf`;
+      const url = `./files/lesson-${i + 1}.pdf#view=fitH`;
       const iframe = document.createElement('iframe');
 
       iframe.setAttribute('src', url);
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
         iframe.style.display = 'none';
       }
       iframe.setAttribute('id', `tab-content-${i + 1}`);
-      container.appendChild(iframe);
+      content.appendChild(iframe);
     }
   }
 
