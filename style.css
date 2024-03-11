@@ -1,0 +1,13 @@
+body {
+  background-image: url('./brown_elegant_flat_seamless_arabic_geometric_ornament_pattern.jpg');
+  background-size: 500px;
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+  min-width: 100vh;
+}
