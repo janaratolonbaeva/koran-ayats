@@ -5,11 +5,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function createIframe() {
     for (i = 0; i < filesNumber; i++) {
-      const url = `./files/lesson-${i + 1}.pdf#view=fitH`;
+      const url = `https://janaratolonbaeva.github.io/koran-ayats/files/lesson-${i + 1}.pdf#view=fitH`;
       const iframe = document.createElement('iframe');
 
       iframe.setAttribute('src', url);
-      iframe.setAttribute('class', `tab-content w-full h-screen`);
+      iframe.setAttribute('scrolling', 'auto');
+      iframe.setAttribute('type', 'application/pdf');
+      iframe.setAttribute('class', `tab-content w-full min-h-screen`);
       if (i !== 0) {
         iframe.style.display = 'none';
       }
