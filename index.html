@@ -9,9 +9,31 @@
   </head>
   <body>
     <div class="container bg-white shadow-lg py-10">
-      <div class="content mb-10"></div>
+      <div id="content" class="content mb-10 min-h-[80vh]"></div>
       <div class="buttons flex gap-3 md:gap-5 flex-wrap"></div>
     </div>
+    <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
     <script src="./index.js"></script>
+    <!-- <script>
+      const filesNumber = 20;
+      const content = document.querySelector('.content');
+      // const adobeDCView = new AdobeDC.View({ clientId: '4526a0192e9a40de9b45c4cad96b5888', divId: 'content' });
+
+      // document.addEventListener('adobe_dc_view_sdk.ready', function () {
+      //   var adobeDCView = new AdobeDC.View({
+      //     clientId: '4526a0192e9a40de9b45c4cad96b5888',
+      //     divId: `content`,
+      //   });
+
+      //   function updateViewer(index) {
+      //     adobeDCView.previewFile({
+      //       content: { location: { url: `https://janaratolonbaeva.github.io/koran-ayats/files/lesson-${index}.pdf` } },
+      //       metaData: { fileName: `lesson-${index}.pdf` },
+      //     });
+      //   }
+      // });
+
+      // for (let i = 0; i < filesNumber.length; i++) {}
+    </script> -->
   </body>
 </html>
